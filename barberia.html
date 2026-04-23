@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Barbería Elegante</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70') center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* BOTÓN */
+.btn {
+    margin-top: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1ebe5d;
+}
+
+/* SECCIONES */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #f5f5f5;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+/* GALERÍA */
+.gallery img {
+    width: 250px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* BOTÓN FLOTANTE */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float img {
+    width: 35px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Barbería Elegante 💈</h1>
+    <p>Agenda tu cita fácil por WhatsApp 📲</p>
+
+    <a href="https://wa.me/573192191424?text=Hola%20quiero%20agendar%20una%20cita" target="_blank">
+        <button class="btn">Agendar cita 📲</button>
+    </a>
+</div>
+
+<!-- SERVICIOS -->
+<div class="section">
+    <h2>Servicios</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Corte clásico</h3>
+            <p>$15.000</p>
+        </div>
+
+        <div class="card">
+            <h3>Barba</h3>
+            <p>$10.000</p>
+        </div>
+
+        <div class="card">
+            <h3>Corte + barba</h3>
+            <p>$20.000</p>
+        </div>
+    </div>
+</div>
+
+<!-- GALERÍA -->
+<div class="section gallery">
+    <h2>Trabajos</h2>
+    <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186">
+    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f">
+    <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>Contáctanos por WhatsApp 📲</p>
+</div>
+
+<!-- BOTÓN FLOTANTE -->
+<a href="https://wa.me/573192191424?text=Hola%20quiero%20informacion" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+</body>
+</html>
