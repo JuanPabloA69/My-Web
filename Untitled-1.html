@@ -1,0 +1,161 @@
+index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Servicios Web</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* BOTÓN */
+.btn {
+    margin-top: 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1ebe5d;
+}
+
+/* SECCIONES */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* BOTÓN FLOTANTE */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-icon {
+    width: 35px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+</style>
+
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Creo páginas web que venden 🚀</h1>
+    <p>Ayudo a negocios a conseguir más clientes con páginas modernas y económicas</p>
+
+    <a href="https://wa.me/573158960658?text=Hola%20quiero%20informacion" target="_blank">
+        <button class="btn">Solicitar información 📲</button>
+    </a>
+</div>
+
+<!-- SERVICIOS -->
+<div class="section">
+    <h2>¿Qué ofrezco?</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🌐 Páginas web</h3>
+            <p>Diseño páginas modernas para negocios</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Rápidas</h3>
+            <p>Carga rápida y optimizadas</p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Responsive</h3>
+            <p>Se ven bien en celular y computador</p>
+        </div>
+    </div>
+</div>
+
+<!-- PORTAFOLIO -->
+<div class="section">
+    <h1>Mis trabajos</h1>
+
+<p>Página para barbería de Barrio</p>
+
+<a href="barberia.html" target="_blank">
+    <button>Ver proyecto 💈</button>
+</a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>Contáctame por WhatsApp 📲</p>
+</div>
+
+<!-- BOTÓN FLOTANTE -->
+<a href="https://wa.me/573158960658?text=Hola%20quiero%20informacion" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="whatsapp-icon">
+</a>
+
+</body>
+</html>
